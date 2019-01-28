@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loop & Array</h1>
+    <h2>Co workers</h2>
+    <ul>
+        <script>
+            var coWorkers = ["minizid", "postcaesar", "cloudbridge", "bandiera", "ramza"];
+            var i = 0;
+            while (i < coWorkers.length) {
+                document.write('<li><a href="http://' + coWorkers[i] + '.com">' + coWorkers[i] + '</a></li>');
+                i = i + 1;
+            }
+
+            document.write('<br>');
+
+            coWorkers.forEach(element => {
+                document.write('<li>' + element + '</li>');
+            });
+
+        </script>
+    </ul>
+</body>
+
+</html>
